@@ -1,0 +1,19 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+
+inhibit_all_warnings!
+
+def common_pods
+    pod 'GPUImage'
+end
+
+def xh_pods
+    
+end
+
+target 'GPUImageDemo' do
+    common_pods
+    xh_pods
+end
